@@ -2,7 +2,7 @@ package techproed.tests;
 import org.testng.SkipException;
 import org.testng.annotations.*;
 public class Day19_TestNGAnnotations {
-    /*
+   /*
     @Test : Test case ousturmak icin kullanilir
     @Before ve @After : 5 Before 5 After anotations var
     suite > tests > grup > class > method
@@ -23,6 +23,7 @@ public class Day19_TestNGAnnotations {
     NOT : default prioriry nin degeri 0 a esittir
     @Test = @Test(priority = 0)
      */
+
     @BeforeSuite
     public void beforeSuite(){
         System.out.println("Before Suite");
@@ -43,10 +44,12 @@ public class Day19_TestNGAnnotations {
     public void beforeMethod(){
         System.out.println("Before Method");
     }
+
     @AfterSuite
     public void afterSuite(){
         System.out.println("After Suite");
     }
+
     @AfterTest
     public void afterTest(){
         System.out.println("After Test");
@@ -59,6 +62,9 @@ public class Day19_TestNGAnnotations {
     public void afterMethod(){
         System.out.println("After Method");
     }
+
+
+
     @Test(priority = 1)
     public void test7(){
         System.out.println("Test 7");
@@ -83,5 +89,6 @@ public class Day19_TestNGAnnotations {
     public void test6(){
         System.out.println("Test 6");
     }
-//    test6 >test7 >test5 > test4 .
+//    test6 >test7 >test5 > test4
+
 }
